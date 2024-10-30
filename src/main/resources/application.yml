@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: "deployer"
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
+
+service-instances:
+  - name: "Primary Server"
+    environments:
+      O:
+        name: "development"
+        url: "http://dev.example.com"
+      T:
+        name: "testing"
+        url: "http://test.example.com"
+      A:
+        name: "acceptance"
+        url: "http://acc.example.com"
+      P:
+        name: "production"
+        url: "http://prod.example.com"
+
+  - name: "Secondary Server"
+    environments:
+      O:
+        name: "development"
+        url: "http://secondary-dev.example.com"
+      T:
+        name: "testing"
+        url: "http://secondary-test.example.com"
+      A:
+        name: "acceptance"
+        url: "http://secondary-acc.example.com"
+      P:
+        name: "production"
+        url: "http://secondary-prod.example.com"

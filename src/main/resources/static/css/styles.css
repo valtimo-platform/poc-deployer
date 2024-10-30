@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin-right: 10px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Table styling (for index.html) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Form elements (for deploy.html) */
+label, select, button {
+    display: block;
+    margin: 10px 0;
+}
+
+/* styles.css */
+
+/* Base pill style */
+.artifact-pill {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 2px;
+    vertical-align: top;
+    position: relative;
+    color: white;
+}
+
+/* Green pill style for deployed artifacts */
+.artifact-pill.deployed {
+    background-color: #4CAF50; /* Green color */
+}
+
+/* Red pill style for not deployed artifacts */
+.artifact-pill.not-deployed {
+    background-color: #f44336; /* Red color */
+}
+
+/* Red pill style for no artifacts */
+.artifact-pill.no-artifacts {
+    background-color: #f44336; /* Red color */
+}
+
+/* Subtext styling for deployedOn date */
+.artifact-pill .deployed-on {
+    display: block;
+    font-size: 0.75em;
+    color: #e0e0e0;
+    margin-top: 2px;
+}
